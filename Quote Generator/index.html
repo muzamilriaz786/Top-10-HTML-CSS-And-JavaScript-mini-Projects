@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Quotes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quote-container">
+        <div class="quote-header">
+            <h1><i class="fas fa-quote-left"></i> Inspirational Quotes</h1>
+            <p>Get your daily dose of motivation</p>
+        </div>
+
+        <div class="quote-body">
+            <div class="quote-loading" id="loader">
+                <div class="spinner"></div>
+            </div>
+            <p class="quote-text" id="quote-text">Click the button below to generate a random quote</p>
+            <p class="quote-author" id="quote-author"></p>
+            
+            <div class="quote-actions">
+                <button class="btn" id="new-quote">
+                    <i class="fas fa-sync-alt"></i> New Quote
+                </button>
+                <a href="#" class="btn btn-twitter" id="tweet-quote" target="_blank">
+                    <i class="fab fa-twitter"></i> Tweet
+                </a>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+  
+</body>
+</html>

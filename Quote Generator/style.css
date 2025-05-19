@@ -1,0 +1,180 @@
+:root {
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --accent: #fd79a8;
+    --dark: #2d3436;
+    --light: #f5f6fa;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --border-radius: 16px;
+    --transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.quote-container {
+    background: white;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.quote-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.quote-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.quote-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.quote-header p {
+    opacity: 0.9;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quote-body {
+    padding: 40px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.quote-text {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-weight: 500;
+    text-align: center;
+    transition: var(--transition);
+    opacity: 1;
+}
+
+.quote-author {
+    font-size: 18px;
+    color: var(--primary);
+    text-align: right;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.quote-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 92, 226, 0.3);
+}
+
+.btn-twitter {
+    background: #1DA1F2;
+}
+
+.btn-twitter:hover {
+    box-shadow: 0 5px 15px rgba(29, 161, 242, 0.3);
+}
+
+.quote-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.quote-loading.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(108, 92, 226, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--primary);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .quote-body {
+        padding: 30px;
+        min-height: 250px;
+    }
+
+    .quote-text {
+        font-size: 20px;
+    }
+
+    .quote-author {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

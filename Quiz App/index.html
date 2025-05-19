@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="quantum-quiz">
+        <div class="quiz-header">
+            <h1><i class="fas fa-atom"></i> Quantum Quiz</h1>
+            <p>Test your knowledge to the limit!</p>
+            <div class="quiz-meta">
+                <div class="timer" id="timer">
+                    <i class="fas fa-clock"></i> <span id="time">30</span>s
+                </div>
+                <div class="score">
+                    <i class="fas fa-star"></i> <span id="score">0</span>/<span id="total-questions">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-body" id="quiz-body">
+            <div class="question-container">
+                <div class="question-counter">Question <span id="current-q">1</span></div>
+                <div class="question" id="question">
+                    Loading question...
+                </div>
+                <div class="options-grid" id="options">
+                    <!-- Options will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-footer">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+            </div>
+            <button class="next-btn" id="next-btn" disabled>
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="result-container" id="result-container">
+            <div class="result-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="result-score" id="result-score">
+                Your Score: 0/0
+            </div>
+            <div class="result-message" id="result-message">
+                Keep learning!
+            </div>
+            <div class="result-details">
+                <div class="detail-card">
+                    <div class="detail-value" id="correct-answers">0</div>
+                    <div class="detail-label">Correct</div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-value" id="wrong-answers">0</div>
+                    <div class="detail-label">Wrong</div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-value" id="time-taken">0s</div>
+                    <div class="detail-label">Time</div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn restart-btn" id="restart-btn">
+                    <i class="fas fa-redo"></i> Play Again
+                </button>
+                <button class="action-btn review-btn" id="review-btn">
+                    <i class="fas fa-list-ul"></i> Review Answers
+                </button>
+            </div>
+        </div>
+
+        <div class="review-container" id="review-container">
+            <h3><i class="fas fa-clipboard-check"></i> Review Your Answers</h3>
+            <div id="review-answers">
+                <!-- Answers will be loaded here -->
+            </div>
+            <button class="action-btn back-btn" id="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Results
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>

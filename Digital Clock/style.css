@@ -1,0 +1,116 @@
+ :root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --text-color: #f5f6fa;
+    --background: #2d3436;
+    --glow-color: rgba(108, 92, 231, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.clock-container {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-shadow: 0 0 12px var(--glow-color);
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.time span {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.time .colon {
+    width: 20px;
+    animation: blink 1s infinite;
+}
+
+#ampm {
+    font-size: 1.2rem !important;
+    margin-left: 8px !important;
+    color: var(--secondary-color) !important;
+    vertical-align: top;
+}
+
+.date {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.format-switch {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.switch-label {
+    color: var(--secondary-color);
+    margin-right: 8px;
+    font-size: 0.75rem;
+}
+
+.switch {
+    width: 48px;
+    height: 22px;
+}
+
+.slider:before {
+    height: 14px;
+    width: 14px;
+    bottom: 4px;
+    left: 4px;
+}
+
+/* Glow decoration fixes */
+.decoration {
+    width: 130px;
+    height: 130px;
+    opacity: 0.25;
+    filter: blur(25px);
+}

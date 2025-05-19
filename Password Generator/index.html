@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password-generator">
+        <div class="generator-header">
+            <h1><i class="fas fa-lock"></i> Password Generator</h1>
+            <p>Create strong, secure passwords</p>
+        </div>
+
+        <div class="generator-body">
+            <div class="password-display">
+                <input type="text" id="password-output" readonly>
+                <button class="copy-btn" id="copy-btn" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <div class="tooltip" id="tooltip">Copied!</div>
+                <div class="password-strength">
+                    <div class="strength-bar" id="strength-bar"></div>
+                </div>
+            </div>
+
+            <div class="settings">
+                <div class="setting">
+                    <label for="password-length">Password Length</label>
+                    <div class="length-control">
+                        <input type="range" id="length-slider" min="4" max="32" value="12">
+                        <input type="number" id="password-length" min="4" max="32" value="12">
+                    </div>
+                </div>
+                <div class="setting">
+                    <label for="uppercase">Uppercase Letters (A-Z)</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <div class="setting">
+                    <label for="lowercase">Lowercase Letters (a-z)</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+                <div class="setting">
+                    <label for="numbers">Numbers (0-9)</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div class="setting">
+                    <label for="symbols">Symbols (!@#$%^&*)</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+            </div>
+
+            <button class="generate-btn" id="generate-btn">
+                <i class="fas fa-key"></i> Generate Password
+            </button>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

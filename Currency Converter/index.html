@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <div class="header">
+            <h1>Currency Converter</h1>
+            <p>Convert between currencies with real-time rates</p>
+        </div>
+
+        <div class="input-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" class="input-field" placeholder="Enter amount" value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="from-currency">From</label>
+            <input type="text" id="from-currency" class="input-field" value="USD" readonly>
+            <select id="from-currency-select" class="currency-select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="PKR">PKR</option>
+            </select>
+        </div>
+
+        <div class="exchange-icon" id="swap-currencies">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+
+        <div class="input-group">
+            <label for="to-currency">To</label>
+            <input type="text" id="to-currency" class="input-field" value="EUR" readonly>
+            <select id="to-currency-select" class="currency-select">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="PKR">PKR</option>
+            </select>
+        </div>
+
+        <div class="rate-info" id="rate-info">
+            Loading exchange rate...
+        </div>
+
+        <div class="result-container" id="result-container">
+            <h3>Converted Amount</h3>
+            <div class="result-value" id="result-value">0.00</div>
+            <div class="result-details">
+                <span id="from-amount">1 USD</span> = <span id="to-amount">0.00 EUR</span>
+            </div>
+        </div>
+
+        <div class="last-updated" id="last-updated">
+            Last updated: --/--/---- --:--
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

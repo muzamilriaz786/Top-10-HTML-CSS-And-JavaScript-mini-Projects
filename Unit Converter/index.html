@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Unit Converter | Convert Anything</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">⇄</span>
+                <span>Universal Converter</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Converters</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="converter-container">
+            <div class="converter-header">
+                <h1 class="converter-title">Unit Converter</h1>
+                <div class="favorite-btn">
+                    <button id="favoriteBtn">★ Add to Favorites</button>
+                </div>
+            </div>
+            
+            <div class="category-tabs" id="categoryTabs">
+                <div class="tab active" data-category="length">Length</div>
+                <div class="tab" data-category="weight">Weight</div>
+                <div class="tab" data-category="temperature">Temperature</div>
+                <div class="tab" data-category="area">Area</div>
+                <div class="tab" data-category="volume">Volume</div>
+                <div class="tab" data-category="time">Time</div>
+                <div class="tab" data-category="data">Data</div>
+            </div>
+            
+            <div class="converter-box">
+                <div class="input-group">
+                    <label>From</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="fromValue" value="1" placeholder="Enter value">
+                        <select id="fromUnit"></select>
+                    </div>
+                </div>
+                
+                <button class="swap-btn" id="swapBtn">⇄</button>
+                
+                <div class="input-group">
+                    <label>To</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="toValue" placeholder="Result" readonly>
+                        <select id="toUnit"></select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="result-box">
+                <h3 class="result-title">Conversion Result</h3>
+                <div class="conversion-result" id="conversionResult">1 Meter = 100 Centimeters</div>
+                <div class="conversion-formula" id="conversionFormula">Formula: multiply the length value by 100</div>
+            </div>
+        </div>
+        
+        <div class="popular-conversions" id="popularConversions">
+            <h2 class="section-title">Popular Length Conversions</h2>
+            <div class="conversion-grid" id="popularGrid"></div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Universal Converter. All rights reserved.</p>
+            <p>Created By <a href="https://github.com/muzamilriaz786">Muzammil Riaz</a></p>
+        </footer>   
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
