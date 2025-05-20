@@ -5,16 +5,16 @@ Welcome to the __Top 10 Mini Projects__ repository! This collection features 10 
 
 | Project Name          | Description                                              |
 | --------------------- | -------------------------------------------------------- |
-| 1. Weather Calculator | Calculate and convert temperatures; display weather info |[demo](https://codepen.io/muzammilriaz/pen/bNNJKQy)  
-| 2. Note App           | Create, edit, and delete notes in a user-friendly UI     |[demo](https://codepen.io/muzammilriaz/pen/bNNyENB)
-| 3. Tip Calculator     | Calculate tips and split bills with ease                 |[demo](https://codepen.io/muzammilriaz/pen/MYYRMOm)
-| 4. Unit Converter     | Convert values across different measurement units        |[demo](https://codepen.io/muzammilriaz/pen/azzroXJ)
-| 5. To-Do List         | Manage tasks with add, edit, delete functionality        |[demo](https://codepen.io/muzammilriaz/pen/raabrVy)
-| 6. Digital Clock      | Real-time clock with 12/24 hour toggle                   |[demo](https://codepen.io/muzammilriaz/pen/XJJwXrY)
-| 7. Password Generator | Generate secure random passwords based on criteria       |[demo](https://codepen.io/muzammilriaz/pen/emmaYwV)
-| 8. Currency Converter | Convert currencies using real-time exchange rates        |[demo](https://codepen.io/muzammilriaz/pen/raabKbW)
-| 9. Quiz App           | Multiple-choice quiz application to test your knowledge  |[demo](https://codepen.io/muzammilriaz/pen/raabZog)
-| 10. Quote Generator   | Display random inspirational quotes                      |[demo](https://codepen.io/muzammilriaz/pen/jEERgBY)
+| 1. Weather Calculator | Calculate and convert temperatures; display weather info [demo](https://codepen.io/muzammilriaz/pen/bNNJKQy)   |
+| 2. Note App           | Create, edit, and delete notes in a user-friendly UI    [demo](https://codepen.io/muzammilriaz/pen/bNNyENB) |
+| 3. Tip Calculator     | Calculate tips and split bills with ease               [demo](https://codepen.io/muzammilriaz/pen/MYYRMOm)  |
+| 4. Unit Converter     | Convert values across different measurement units      [demo](https://codepen.io/muzammilriaz/pen/azzroXJ)  |
+| 5. To-Do List         | Manage tasks with add, edit, delete functionality      [demo](https://codepen.io/muzammilriaz/pen/raabrVy)  |
+| 6. Digital Clock      | Real-time clock with 12/24 hour toggle                  [demo](https://codepen.io/muzammilriaz/pen/XJJwXrY) |
+| 7. Password Generator | Generate secure random passwords based on criteria       [demo](https://codepen.io/muzammilriaz/pen/emmaYwV)|
+| 8. Currency Converter | Convert currencies using real-time exchange rates       [demo](https://codepen.io/muzammilriaz/pen/raabKbW) |
+| 9. Quiz App           | Multiple-choice quiz application to test your knowledge  [demo](https://codepen.io/muzammilriaz/pen/raabZog)|
+| 10. Quote Generator   | Display random inspirational quotes                     [demo](https://codepen.io/muzammilriaz/pen/jEERgBY) |
 
 ## How to Use These Projects
 `1.` __Clone the repository:__
